@@ -10,19 +10,19 @@
             <div class="col-md-6">
                 <div class="form-group d-flex align-items-center">
                     <label class="mr-3" style="width: 100px;">Judul</label>
-                    <input type="text" name="nama" class="form-control flex-grow-1" required placeholder="Masukkan Judul" value="{{ $loker->judul }}">
+                    <input type="text" name="judul" class="form-control flex-grow-1" required placeholder="Masukkan Judul" value="{{ $loker->judul }}">
                 </div>
                 <div class="form-group d-flex align-items-center">
                     <label class="mr-3" style="width: 100px;">Perusahaan</label>
-                    <input type="text" name="email" class="form-control flex-grow-1" required placeholder="nama Perusahaan" value="{{ $loker->nama }}">
+                    <input type="text" name="nama" class="form-control flex-grow-1" required placeholder="nama Perusahaan" value="{{ $loker->nama }}">
                 </div>
                 <div class="form-group d-flex align-items-center">
                     <label class="mr-3" style="width: 100px;">Pekerjaan</label>
-                    <input type="text" name="alamat" class="form-control flex-grow-1" required placeholder="Masukkan Pekerjaan" value="{{ $loker->pekerjaan }}">
+                    <input type="text" name="pekerjaan" class="form-control flex-grow-1" required placeholder="Masukkan Pekerjaan" value="{{ $loker->pekerjaan }}">
                 </div>
                 <div class="form-group d-flex align-items-center">
                     <label class="mr-3" style="width: 100px;">Lokasi</label>
-                    <input type="text" name="posisi" class="form-control flex-grow-1" required placeholder="Masukkan Lokasi" value="{{ $loker->lokasi }}">
+                    <input type="text" name="lokasi" class="form-control flex-grow-1" required placeholder="Masukkan Lokasi" value="{{ $loker->lokasi }}">
                 </div>
                 <div class="form-group d-flex align-items-center">
                     <label class="mr-3" style="width: 100px;">Deskripsi</label>

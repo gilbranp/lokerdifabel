@@ -10,19 +10,19 @@
             <div class="col-md-6">
                 <div class="form-group d-flex align-items-center">
                     <label class="mr-3" style="width: 100px;">Judul</label>
-                    <input type="text" name="nama" class="form-control flex-grow-1" required placeholder="Masukkan Judul" value="{{ $pelatihan->judul }}">
+                    <input type="text" name="judul" class="form-control flex-grow-1" required placeholder="Masukkan Judul" value="{{ $pelatihan->judul }}">
                 </div>
                 <div class="form-group d-flex align-items-center">
                     <label class="mr-3" style="width: 100px;">Perusahaan</label>
-                    <input type="text" name="email" class="form-control flex-grow-1" required placeholder="nama Perusahaan" value="{{ $pelatihan->nama }}">
+                    <input type="text" name="nama" class="form-control flex-grow-1" required placeholder="nama Perusahaan" value="{{ $pelatihan->nama }}">
                 </div>
                 <div class="form-group d-flex align-items-center">
-                    <label class="mr-3" style="width: 100px;">Pekerjaan</label>
-                    <input type="text" name="alamat" class="form-control flex-grow-1" required placeholder="Masukkan Pelatihan" value="{{ $pelatihan->pelatihan }}">
+                    <label class="mr-3" style="width: 100px;">Pelatihan</label>
+                    <input type="text" name="pelatihan" class="form-control flex-grow-1" required placeholder="Masukkan Pelatihan" value="{{ $pelatihan->pelatihan }}">
                 </div>
                 <div class="form-group d-flex align-items-center">
                     <label class="mr-3" style="width: 100px;">Lokasi</label>
-                    <input type="text" name="posisi" class="form-control flex-grow-1" required placeholder="Masukkan Lokasi" value="{{ $pelatihan->lokasi }}">
+                    <input type="text" name="lokasi" class="form-control flex-grow-1" required placeholder="Masukkan Lokasi" value="{{ $pelatihan->lokasi }}">
                 </div>
                 <div class="form-group d-flex align-items-center">
                     <label class="mr-3" style="width: 100px;">Deskripsi</label>
