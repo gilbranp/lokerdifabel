@@ -80,6 +80,8 @@ class LokerController extends Controller
      */
     public function update(Request $request, string $id)
     {
+        // @dd($request->all());
+
         $loker = Loker::find($id);
 
         $input = $request->all();
