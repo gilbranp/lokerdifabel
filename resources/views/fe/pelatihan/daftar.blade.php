@@ -61,11 +61,11 @@
               <input type="text" class="form-control" id="nama" name="nama" required>
           </div>
           <div class="mb-3">
-              <label for="nik" class="form-label">NIK</label>
+              <label for="nik" class="form-label">Nomor Induk Keluarga</label>
               <input type="text" class="form-control" id="nik" name="nik" required>
           </div>
           <div class="mb-3">
-              <label for="ttl" class="form-label">TTL</label>
+              <label for="ttl" class="form-label">Tempat Tanggal Lahir</label>
               <input type="text" class="form-control" id="ttl" name="ttl" required>
           </div>
           <div class="mb-3">
