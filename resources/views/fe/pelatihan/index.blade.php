@@ -86,8 +86,10 @@
                                     <div class="flex-grow-1 d-flex flex-column">
                                         <div class="d-flex justify-content-between align-items-center mb-2">
                                             <div>
-                                                <div class="job-title h5 text-truncate">{{ $l->judul }}</div>
-                                                <div class="company-name text-muted text-truncate">{{ $l->nama }}</div>
+                                            <div class="job-title h5 text-wrap" style="max-width: 70%; word-wrap: break-word; overflow-wrap: break-word;">
+                                                {{ $l->judul }}
+                                            </div>
+                                                <div class="company-name text-muted text-truncate text-wrap">{{ $l->nama }}</div>
                                             </div>
                                         </div>
                                         <div class="job-details flex-grow-1">
