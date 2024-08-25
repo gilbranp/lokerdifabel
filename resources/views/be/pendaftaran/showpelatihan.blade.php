@@ -16,11 +16,11 @@
                 <input type="text" class="form-control" value="{{ $daftarpelatihan->nama }}" readonly disabled>
             </div>
             <div class="form-group">
-                <label>NIK</label>
+                <label>Nomor induk Keluarga</label>
                 <input type="text" class="form-control" value="{{ $daftarpelatihan->nik }}" readonly disabled>
             </div>
             <div class="form-group">
-                <label>TTL</label>
+                <label>Tempat tanggal lahir</label>
                 <input type="text" class="form-control" value="{{ $daftarpelatihan->ttl }}" readonly disabled>
             </div>
             <div class="form-group">
