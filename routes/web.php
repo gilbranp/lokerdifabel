@@ -51,6 +51,9 @@ Route::get('/pelatihan', function () {
     $pelatihan = Pelatihan::all();
     return view('fe.pelatihan.index',compact('pelatihan'));
 });
+Route::get('/infopelatihan',function(){
+    return view('fe.infopelatihan.index');
+});
 // Route::get('/daftarloker', function () {
 //     $loker = Loker::all();
 //     return view('fe.loker.daftar',compact('loker'));
