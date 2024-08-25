@@ -61,7 +61,7 @@
           <input type="text" class="form-control" id="nama" name="nama" required>
         </div>
         <div class="mb-3">
-          <label for="namalengkap" class="form-label">TTL</label>
+          <label for="namalengkap" class="form-label">Tempat Tanggal Lahir</label>
           <input type="text" class="form-control" id="nama" name="ttl" required>
         </div>
 
