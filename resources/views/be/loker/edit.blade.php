@@ -2,7 +2,7 @@
 
 @section('container')
 
-<form action="{{ route('lokerbe.update', $loker->id) }}" method="POST">
+<form action="{{ route('lokerbe.update', $loker->id) }}" method="POST" enctype="multipart/form-data">
     @csrf
     @method('PUT')
     <div class="container">
@@ -30,17 +30,12 @@
                 </div>
                 <div class="form-group d-flex align-items-center">
                 <label class="mr-3" style="width: 100px;">Foto</label>
-                <input type="file" name="foto" class="form-control" value=" {{ $loker->foto }}" >
+                <input type="file" name="foto" class="form-control" >
             </div>
         </div>
     </div>
 </div>
     
-    {{-- 
-  <div class="form-group" style="display: flex; align-items: center;">
-    <label for="formFile" style="margin-right: 3px" class="form-label">Ganti Foto</label>
-  <input class="form-control" name="img" type="file" id="formFile">
-  </div> --}}
     <div class="modal-footer mt-5">
         <a href="/lokerbe"><button type="button" class="btn btn-secondary btn-separator">Batal</button></a>
         <input type="submit" value="Simpan" name="edit" class="btn btn-warning">

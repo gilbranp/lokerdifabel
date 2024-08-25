@@ -42,7 +42,7 @@
         height: 100%;
     }
     .header {
-        background: #4CAF50;
+        background: #0000ff;
         color: white;
         padding: 15px;
         text-align: center;
