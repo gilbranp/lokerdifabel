@@ -7,7 +7,7 @@
         <div id="post-47" class="submit-job-splash post-47 page type-page status-publish">
           <div class="entry-content">
             <div class="text-center">
-              <h2 class="h1">Tentang Kami</h2>
+              <h2 class="h1 mt-5 fs-2">Tentang Kami</h2>
               <p>Jelajahi peluang kerja berdasarkan kategori, lokasi, industri, gaji dan tipe pekerjaan.</p>
             </div>
             <div class="text-center m-b-80">

@@ -26,29 +26,29 @@
     </div>
     <div class="row" id="trainingList">
         <div class="col-md-4">
-            <div class="card-custom hoverku" data-name="Komputer">
+            <a class="text-decoration-none text-dark" href="/hello"><div class="card-custom hoverku" data-name="Komputer">
                 Komputer
-            </div>
+            </div></a>
         </div>
         <div class="col-md-4">
-            <div class="card-custom hoverku" data-name="Otomotif">
+            <a class="text-decoration-none text-dark" href="/hello"><div class="card-custom hoverku" data-name="Otomotif">
                 Otomotif
-            </div>
+            </div></a>
         </div>
         <div class="col-md-4">
-            <div class="card-custom hoverku" data-name="Elektro">
+            <a class="text-decoration-none text-dark" href="/hello"><div class="card-custom hoverku" data-name="Elektro">
                 Elektro
-            </div>
+            </div></a>
         </div>
         <div class="col-md-4">
-            <div class="card-custom hoverku" data-name="Menjahit">
+            <a class="text-decoration-none text-dark" href="/hello"><div class="card-custom hoverku" data-name="Menjahit">
                 Menjahit
-            </div>
+            </div></a>
         </div>
         <div class="col-md-4">
-            <div class="card-custom hoverku" data-name="Salon">
+            <a class="text-decoration-none text-dark" href="/hello"><div class="card-custom hoverku" data-name="Salon">
                 Salon
-            </div>
+            </div></a>
         </div>
     </div>
 </div>

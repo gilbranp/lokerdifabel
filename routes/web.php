@@ -54,6 +54,9 @@ Route::get('/pelatihan', function () {
 Route::get('/infopelatihan',function(){
     return view('fe.infopelatihan.index');
 });
+Route::get('/hello',function(){
+    return view('fe.infopelatihan.detail');
+});
 // Route::get('/daftarloker', function () {
 //     $loker = Loker::all();
 //     return view('fe.loker.daftar',compact('loker'));
