@@ -93,7 +93,7 @@
 							<tr>
 								<th scope="col">No</th>
 								<th scope="col">Nama Lengkap</th>
-								<th scope="col">TTL</th>
+								<th scope="col">Tempat Tanggal Lahir</th>
 								<th scope="col">Nomor Wa</th>
 								<th scope="col">Pekerjaan pilihan</th>
 								<th scope="col">Pengalaman</th>
