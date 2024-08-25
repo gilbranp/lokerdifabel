@@ -2,7 +2,7 @@
 
 @section('container')
 
-<form action="{{ route('pelatihanbe.update', $pelatihan->id) }}" method="POST">
+<form action="{{ route('pelatihanbe.update', $pelatihan->id) }}" method="POST" enctype="multipart/form-data">
     @csrf
     @method('PUT')
     <div class="container">
