@@ -51,21 +51,37 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">BERANDA</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/loker">CARI LOKER</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/pelatihan">CARI PELATIHAN</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/infopelatihan">INFO PELATIHAN</a>
-          </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">BERANDA</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/loker">CARI LOKER</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/pelatihan">CARI PELATIHAN</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/infopelatihan">INFO PELATIHAN</a>
+            </li>
+            @auth('member')
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../img/teamm.jpg" alt="Profile" class="rounded-circle" width="30" height="30">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="/profile">Profile</a></li>
+                    <li>
+                        <form method="POST" action="/member-logout">
+                            @csrf
+                            <button type="submit" class="dropdown-item">Logout</button>
+                        </form>
+                    </li>
+                </ul>
+            </li>
+            @endauth
         </ul>
-
-      </div>
+    </div>
+    
     </div>
   </nav>
 
@@ -170,6 +186,8 @@
       </div> -->
     </footer>
     <!-- ======= End Footer ======= -->
+<!-- Bootstrap JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 <!--akhir footer-->

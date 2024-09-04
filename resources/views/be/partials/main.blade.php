@@ -114,7 +114,26 @@
           <i class="bi bi-person-workspace"></i>
           <span>Kelola Pendaftaran</span>
         </a>
-      </li><!-- End Dashboard Nav -->
+      </li>
+      <li class="nav-item">
+        <a class="nav-link {{ ($title === 'Pengajuan Dana') ? '' : 'collapsed' }}" href="/profilee">
+          <i class="bi bi-wrench-adjustable"></i>
+          <span>Kelola Profile</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link {{ ($title === 'Info Pelatihan') ? '' : 'collapsed' }}" href="/infopel">
+          <i class="bi bi-book"></i>
+          <span>Info Pelatihan</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link {{ ($title === 'Peserta Pelatihan') ? '' : 'collapsed' }}" href="/pesertapelatihan">
+          <i class="bi bi-person-add"></i>
+          <span>Peserta Pelatihan</span>
+        </a>
+      </li>
+      <!-- End Dashboard Nav -->
 
 
       {{-- <li class="nav-heading">Pages</li> --}}
