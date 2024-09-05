@@ -152,7 +152,7 @@
                             @foreach ($infopelatihan as $data)
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
-                                <td>{{ $data->foto }}<img src="../img/teamm.jpg" alt="Foto" class="img-thumbnail" width="50"></td>
+                                <td><img src="../{{ $data->foto }}" alt="Foto" class="img-thumbnail" width="50"></td>
                                 <td>{{ $data->nama }}</td>
                                 <td>{{ $data->jabatan }}</td>
                                 <td>{{ $data->email }}</td>

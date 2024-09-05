@@ -53,31 +53,14 @@
             <td>Total Modal Usaha</td>
         </thead>
         <tbody>
-            <tr>
-                <td>1</td>
-                <td>Komputer</td>
-                <td>4.000.000</td>
+            @foreach ($infopel as $ip)
+                 <tr>
+                <td>{{ $loop->iteration }}</td>
+                <td>{{ $ip->pelatihan }}</td>
+                <td>{{ $ip->modal }}</td>
             </tr>
-            <tr>
-                <td>2</td>
-                <td>Otomotif</td>
-                <td>2.000.000</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Elektro</td>
-                <td>10.000.000</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Menjahit</td>
-                <td>1.500.000</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Salon</td>
-                <td>3.000.000</td>
-            </tr>
+            @endforeach
+           
         </tbody>
     </table>
 </div>
