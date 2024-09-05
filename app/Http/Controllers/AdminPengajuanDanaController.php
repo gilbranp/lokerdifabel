@@ -6,15 +6,17 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use App\Models\PengajuanDana;
 use App\Http\Controllers\Controller;
+use App\Models\Infopelatihan;
 
 class AdminPengajuanDanaController extends Controller
 {
     public function index()
     {
+        $infopel = Infopelatihan::all();
         $title = "Pengajuan Dana";
         $user = User::orderBy('created_at', 'desc')->get();
         $pengajuanDanas = PengajuanDana::with('member')->get();
-        return view('be.pengajuan.index', compact('pengajuanDanas','user','title'));
+        return view('be.pengajuan.index', compact('infopel','pengajuanDanas','user','title'));
     }
 
     public function show($id)
