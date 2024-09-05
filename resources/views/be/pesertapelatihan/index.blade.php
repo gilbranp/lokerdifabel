@@ -85,9 +85,9 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                
                     @foreach ($pesertapelatihan as $pp)
-                 
+                 <tr>
                     <td>{{ $loop->iteration }}</td>
                         <td>{{ $pp->nama }}</td>
                         <td>{{ $pp->jenis_kelamin }}</td>
@@ -111,9 +111,9 @@
                                 </form>
                             </div>
                         </td>
-                               
+                        </tr>        
                     @endforeach
-                </tr>
+               
             </tbody>
         </table>
         
