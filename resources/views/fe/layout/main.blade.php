@@ -98,7 +98,7 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="img/teamm.jpg" class="d-block w-100" alt="Hanifah">
+        <img src="{{ asset('img/teamm.jpg') }}" class="d-block w-100" alt="Hanifah">
 
         <div class="col-md-1 hidden-xs"></div>
       </div>

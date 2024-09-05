@@ -25,31 +25,16 @@
         <input type="text" class="form-control" placeholder="Masukkan Kata Kunci" aria-label="Masukkan Kata Kunci" id="searchInput" onkeyup="filterTraining()">
     </div>
     <div class="row" id="trainingList">
+        @foreach ($infopel as $ip)
         <div class="col-md-4">
-            <a class="text-decoration-none text-dark" href="/hello"><div class="card-custom hoverku" data-name="Komputer">
-                Komputer
-            </div></a>
+            <a class="text-decoration-none text-dark" href="{{ route('infopelatihan.show', $ip->id) }}">
+                <div class="card-custom hoverku" data-name="Komputer">
+                    {{ $ip->pelatihan }}
+                </div>
+            </a>
         </div>
-        <div class="col-md-4">
-            <a class="text-decoration-none text-dark" href="/hello"><div class="card-custom hoverku" data-name="Otomotif">
-                Otomotif
-            </div></a>
-        </div>
-        <div class="col-md-4">
-            <a class="text-decoration-none text-dark" href="/hello"><div class="card-custom hoverku" data-name="Elektro">
-                Elektro
-            </div></a>
-        </div>
-        <div class="col-md-4">
-            <a class="text-decoration-none text-dark" href="/hello"><div class="card-custom hoverku" data-name="Menjahit">
-                Menjahit
-            </div></a>
-        </div>
-        <div class="col-md-4">
-            <a class="text-decoration-none text-dark" href="/hello"><div class="card-custom hoverku" data-name="Salon">
-                Salon
-            </div></a>
-        </div>
+    @endforeach
+    
     </div>
 </div>
 

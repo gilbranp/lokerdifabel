@@ -17,8 +17,10 @@ use App\Http\Controllers\PendaftaranController;
 use App\Http\Controllers\PengajuanDanaController;
 use App\Http\Controllers\DaftarpelatihanController;
 use App\Http\Controllers\AdminPengajuanDanaController;
+use App\Http\Controllers\FepelatihanController;
 use App\Http\Controllers\InfopelatihanController;
 use App\Http\Controllers\PesertapelatihanController;
+use App\Models\Infopelatihan;
 
 /*
 |--------------------------------------------------------------------------
@@ -116,9 +118,7 @@ Route::middleware(['auth.member'])->group(function(){
         $pelatihan = Pelatihan::all();
         return view('fe.pelatihan.index',compact('pelatihan'));
     });
-    Route::get('/infopelatihan',function(){
-        return view('fe.infopelatihan.index');
-    });
+   
     Route::get('/hello',function(){
         return view('fe.infopelatihan.detail');
     });
@@ -140,8 +140,13 @@ Route::middleware(['auth.member'])->group(function(){
     Route::get('/sertifikat-saya', [MemberController::class, 'lihatSertifikat'])->name('sertifikat.saya');
     Route::get('/download-sertifikat/{id}', [MemberController::class, 'downloadSertifikat'])->name('download.sertifikat');
 
-});
+    Route::resource('/infopelatihan',FepelatihanController::class);
 
+});
+// Route::get('/infopelatihan',function(){
+//     $infopel = Infopelatihan::all();
+//     return view('fe.infopelatihan.index',compact('infopel'));
+// });
 // member login
 Route::get('/member-login', [MemberController::class, 'showMemberLoginForm'])->name('member.login');
 Route::post('/member-login', [MemberController::class, 'memberLogin']);
