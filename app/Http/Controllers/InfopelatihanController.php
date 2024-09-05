@@ -72,7 +72,16 @@ class InfopelatihanController extends Controller
      */
     public function show(string $id)
     {
-        //
+        // Mengambil data pelatihan berdasarkan id
+        // $pelatihan = Infopelatihan::find($id);
+    
+        // // Mengecek apakah data pelatihan ditemukan
+        // if (!$pelatihan) {
+        //     return redirect('/infopelatihan')->with('error', 'Pelatihan tidak ditemukan');
+        // }
+    
+        // // Mengembalikan view dengan data pelatihan
+        // return view('fe.infopelatihan.detail', compact('pelatihan'));
     }
 
     /**
