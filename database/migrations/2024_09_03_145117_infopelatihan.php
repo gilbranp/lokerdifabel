@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('hari');
             $table->time('jam');
             $table->integer('jumlah');
-            $table->decimal('modal', 15, 2); // Amount with decimal
+            $table->string('modal'); // Amount with decimal
             $table->string('pelatihan');
             $table->timestamps();
         });
